@@ -20,7 +20,24 @@ pip install flask
 pip install flask-sqlalchemy
 ```
 
+### `app.py`
+
+Still based on the code from Alina Chudnova, see version 0.1.0.
+
+### `importer.py`
+
+This is some code that I reuse for many projects. The two functions create a connection to a SQLite database and specify the log-file and file mode (write or append).
+
+It then reads the contents of the `new_todo.csv` file (current directory). Each line in the file represents a new to do. The script stops reading when it has reached the end of the file or an empty line. This means you can store tasks for the following days in this file. You just have to separate it with an empty line from the tasks you want to import in the database.
+
 ## History
+
+### Version 0.1.2
+
+**Date**: 17/10/2023
+
+- Removed some unnecessary HTML code
+- Added `importer.py`, a script to easily pump some tasks into the database
 
 ### Version 0.1.1
 
