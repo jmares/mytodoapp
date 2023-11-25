@@ -31,7 +31,7 @@ def index():
         return redirect('/')
     else:
         # Querying all TodoItem objects from the database and rendering the template
-        items = TodoItem.query.all()
+        items = TodoItem.query.order_by(TodoItem.completed, TodoItem.id).all()
         return render_template('index.html', items=items)
     
 @app.route('/complete/<int:item_id>')
