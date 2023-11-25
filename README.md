@@ -32,6 +32,12 @@ It then reads the contents of the `new_todo.csv` file (current directory). Each 
 
 ## History
 
+### Version 0.1.3
+
+**Date**: 25/11/2023
+
+- Completion of a card / to do can now be checked and unchecked.
+
 ### Version 0.1.2
 
 **Date**: 17/10/2023

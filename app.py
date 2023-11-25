@@ -38,7 +38,10 @@ def index():
 def complete(item_id):
     # Retrieving a TodoItem object by ID, marking it as completed, and committing the changes
     item = TodoItem.query.get_or_404(item_id)
-    item.completed = True
+    if item.completed == True:
+        item.completed = False
+    else:
+        item.completed = True
     db.session.commit()
     return redirect('/')
 
