@@ -32,6 +32,28 @@ It then reads the contents of the `new_todo.csv` file (current directory). Each 
 
 ## History
 
+### Version 0.1.5
+
+**Date**: 26/11/2023
+
+- Correcting documentation
+- Adding database schema FYI
+
+```sql
+CREATE TABLE todo_item (
+        id INTEGER NOT NULL, 
+        content VARCHAR(200), 
+        completed BOOLEAN, 
+        PRIMARY KEY (id)
+);
+```
+
+### Version 0.1.4
+
+**Date**: 25/11/2023
+
+- Completed cards are now moved to the end of the list.
+ 
 ### Version 0.1.3
 
 **Date**: 25/11/2023
